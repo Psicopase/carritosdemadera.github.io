@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carritos de Madera - Cofrem Acacías Meta 2025</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #f3eee6;
+      background-image: url('https://www.transparenttextures.com/patterns/wood-pattern.png');
+      color: #3b2f2f;
+      overflow-x: hidden;
+      position: relative;
+      cursor: url('https://cur.cursors-4u.net/nature/nat-7/nat665.cur'), auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 2.5rem 1rem;
+      background: linear-gradient(135deg, #6b4226, #a47148);
+      color: white;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      transition: background 0.5s ease;
+    }
+
+    header:hover {
+      background: linear-gradient(135deg, #7e5031, #b58255);
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.3rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease;
+    }
+
+    header h1:hover {
+      transform: scale(1.05);
+    }
+
+    header p {
+      font-size: 1.2rem;
+      letter-spacing: 1px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 1.5rem;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      backdrop-filter: blur(5px);
+      position: relative;
+      overflow: hidden;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    .descripcion {
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    .descripcion h2 {
+      color: #6b4226;
+      font-size: 1.8rem;
+      transition: color 0.3s ease;
+    }
+
+    .descripcion h2:hover {
+      color: #a47148;
+    }
+
+    .descripcion p {
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      line-height: 1.6;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .galeria img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+      filter: brightness(1.1) saturate(1.2);
+    }
+
+    .integrantes {
+      text-align: center;
+      background-color: #f5e4d0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .integrantes h3 {
+      color: #6b4226;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      transition: transform 0.3s ease;
+    }
+
+    .integrantes h3:hover {
+      transform: scale(1.05);
+    }
+
+    .integrantes p {
+      margin: 0.3rem 0;
+      font-weight: 500;
+    }
+
+    footer {
+      background: #6b4226;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Efecto de luz que sigue el mouse */
+    .efecto-luz {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255,220,180,0.2), transparent 60%);
+      transition: background 0.1s ease;
+      z-index: 0;
+    }
+
+    /* Botón */
+    .btn-contacto {
+      display: inline-block;
+      background: #8b5e3c;
+      color: white;
+      padding: 0.8rem 1.5rem;
+      border-radius: 25px;
+      text-decoration: none;
+      margin-top: 1.5rem;
+      font-weight: bold;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn-contacto:hover {
+      background: #704529;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="efecto-luz"></div>
+
+  <header>
+    <h1>Carritos de Madera</h1>
+    <p>Colegio Cofrem Acacías Meta - 2025</p>
+  </header>
+
+  <main>
+    <section class="descripcion">
+      <h2>Hechos con Pasión y Estilo</h2>
+      <p>
+        Nuestros carritos de madera combinan tradición, diseño y calidad.  
+        Cada uno está hecho a mano con materiales naturales, pensados para durar y mantener viva la alegría del juego artesanal.
+      </p>
+
+      <a href="#" class="btn-contacto">Contáctanos</a>
+    </section>
+
+    <section class="galeria">
+      <img src="foto1.jpg" alt="Carrito de madera 1">
+      <img src="foto2.jpg" alt="Carrito de madera 2">
+      <img src="foto3.jpg" alt="Carrito de madera 3">
+    </section>
+
+    <section class="integrantes">
+      <h3>Integrantes del Proyecto</h3>
+      <p>Allen Santiago Pérez Velásquez</p>
+      <p>Sergio Luis Gutiérrez</p>
+      <p>Rafael Camilo Salgado</p>
+      <p>Johan Alejandro Jaramillo Martínez</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Cofrem Acacías Meta | Proyecto Carritos de Madera</p>
+  </footer>
+
+  <script>
+    // Luz cálida que sigue al mouse
+    const efectoLuz = document.querySelector('.efecto-luz');
+    document.addEventListener('mousemove', e => {
+      efectoLuz.style.setProperty('--x', `${e.clientX}px`);
+      efectoLuz.style.setProperty('--y', `${e.clientY}px`);
+    });
+  </script>
+</body>
+</html>
