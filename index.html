@@ -91,19 +91,43 @@
       margin-top: 2rem;
     }
 
-    .galeria img {
+    .producto {
+      background: #fff8f0;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      padding: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .producto img {
       width: 100%;
       height: 220px;
       object-fit: cover;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-      transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+      border-radius: 10px;
+      margin-bottom: 0.8rem;
     }
 
-    .galeria img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.4);
-      filter: brightness(1.1) saturate(1.2);
+    .precio {
+      background: #a47148;
+      color: #fff;
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 25px;
+      font-weight: bold;
+      font-size: 1.1rem;
+      box-shadow: inset 0 0 5px rgba(255,255,255,0.4);
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .precio:hover {
+      background: #6b4226;
+      transform: scale(1.1);
     }
 
     .integrantes {
@@ -144,7 +168,6 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
-    /* Efecto de luz que sigue el mouse */
     .efecto-luz {
       position: fixed;
       top: 0;
@@ -157,7 +180,6 @@
       z-index: 0;
     }
 
-    /* Botón */
     .btn-contacto {
       display: inline-block;
       background: #8b5e3c;
@@ -195,11 +217,22 @@
       <a href="#" class="btn-contacto">Contáctanos</a>
     </section>
 
-    <!-- 🪵 Galería actualizada con tus fotos -->
+    <!-- 🪵 Galería con precios -->
     <section class="galeria">
-      <img src="carro1.jpeg" alt="Carrito de madera negro y verde">
-      <img src="carro2.jpeg" alt="Carrito de madera rojo pequeño">
-      <img src="carro3.jpeg" alt="Carrito de madera marrón clásico">
+      <div class="producto">
+        <img src="carro1.jpeg" alt="Carrito de madera negro y verde">
+        <div class="precio">$17.000</div>
+      </div>
+
+      <div class="producto">
+        <img src="carro2.jpeg" alt="Carrito de madera rojo pequeño">
+        <div class="precio">$15.000</div>
+      </div>
+
+      <div class="producto">
+        <img src="carro3.jpeg" alt="Carrito de madera marrón clásico">
+        <div class="precio">$16.000</div>
+      </div>
     </section>
 
     <section class="integrantes">
